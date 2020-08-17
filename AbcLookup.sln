@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcLookup", "AbcLookup\AbcLookup.csproj", "{37370D6F-5C92-4332-84C6-1513D3EA288B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcLookup.Test", "AbcLookup.Test\AbcLookup.Test.csproj", "{142060AE-ABCC-41C2-B117-7804220C3EF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37370D6F-5C92-4332-84C6-1513D3EA288B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37370D6F-5C92-4332-84C6-1513D3EA288B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37370D6F-5C92-4332-84C6-1513D3EA288B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37370D6F-5C92-4332-84C6-1513D3EA288B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{142060AE-ABCC-41C2-B117-7804220C3EF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142060AE-ABCC-41C2-B117-7804220C3EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142060AE-ABCC-41C2-B117-7804220C3EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142060AE-ABCC-41C2-B117-7804220C3EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
