@@ -8,6 +8,7 @@ namespace AbcLookup
     {
         private static readonly List<char> AbcList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray().ToList();
 
+		//Is used to get the next character in the alphabet
         public static char GetNext(char input)
         {
             var i = AbcList.IndexOf(input) + 1;
