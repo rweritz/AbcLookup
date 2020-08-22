@@ -28,6 +28,8 @@ steps:
 
 - task: gitversion/execute@0
   displayName: Use GitVersion
+  inputs:
+    additionalArguments: '/updateprojectfiles'
 - script: |
     echo FullSemVer: $(fullSemVer)
     echo ##vso[build.updatebuildnumber]$(fullSemVer)
