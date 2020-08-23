@@ -58,10 +58,8 @@ steps:
   displayName: Pack
   inputs: 
     command: 'pack'
-    versioningScheme: byPrereleaseNumber
-    majorVersion: '$(Major)'
-    minorVersion: '$(Minor)'
-    patchVersion: '$(Patch)'
+    versioningScheme: byEnvVar
+    versionEnvVar: '$(NuGetVersionV2)'
 
 - task: DotNetCoreCLI@2
   displayName: Push
