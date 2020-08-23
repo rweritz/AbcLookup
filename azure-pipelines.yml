@@ -59,7 +59,7 @@ steps:
   inputs: 
     command: 'pack'
     versioningScheme: byEnvVar
-    versionEnvVar: '$(NuGetVersionV2)'
+    versionEnvVar: 'GitVersion.NuGetVersionV2'
 
 - task: DotNetCoreCLI@2
   displayName: Push
