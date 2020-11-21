@@ -11,6 +11,7 @@ resources:
     - repository: templates
       type: github
       name: rweritz/CICD
+      endpoint: 'rweritz repo and user token'
 
 jobs:
   - template: dotnet-ci-pipeline.yml@templates
