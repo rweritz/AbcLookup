@@ -13,7 +13,7 @@ resources:
       name: rweritz/CICD
 
 jobs:
-  - template: ci-pipeline.yml@templates  # Template reference
+  - template: ci-pipeline.yml@templates
     parameters:
       restoreFeed: excribe
       publishFeed: excribe
