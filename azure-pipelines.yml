@@ -1,55 +1,19 @@
-# ASP.NET Core
-# Build and test ASP.NET Core projects targeting .NET Core.
-# Add steps that run tests, create a NuGet package, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
 trigger:
   branches:
     include:
       - '*'
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: ubuntu-latest
 
-variables:
-  buildConfiguration: 'Release'
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: excribe/CICD
 
-steps:
-- task: UseDotNet@2
-  displayName: Install .net core
-  inputs:
-    version: '3.1.x'
-    packageType: runtime
-
-- task: gitversion/setup@0
-  displayName: Install GitVersion
-  inputs:
-    versionSpec: '5.3.7'
-
-- task: gitversion/execute@0
-  displayName: Use GitVersion
-  inputs:
-    additionalArguments: '/updateprojectfiles'
-- script: |
-    echo FullSemVer: $(fullSemVer)
-    echo ##vso[build.updatebuildnumber]$(fullSemVer)
-
-- task: DotNetCoreCLI@2
-  displayName: Restore
-  inputs:
-    command: 'restore'
-    includeNuGetOrg: true
-
-- task: DotNetCoreCLI@2
-  displayName: Build
-  inputs:
-    command: 'build'
-    projects: '**/*.csproj'
-    arguments: '--configuration $(buildConfiguration)'
-
-- task: DotNetCoreCLI@2
-  displayName: Test
-  inputs:
-    command: test
-    projects: '**/*Test/*.csproj'
-    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+jobs:
+  - template: ci-pipeline.yml@templates  # Template reference
+    parameters:
+      restoreFeed: excribe
+      publishFeed: excribe

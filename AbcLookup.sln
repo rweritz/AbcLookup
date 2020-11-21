@@ -4,6 +4,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcLookup", "AbcLookup\AbcL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcLookup.Test", "AbcLookup.Test\AbcLookup.Test.csproj", "{142060AE-ABCC-41C2-B117-7804220C3EF6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{E2A42BB5-4CB4-4D85-96F4-6912FF631EE1}"
+ProjectSection(SolutionItems) = preProject
+	.gitignore = .gitignore
+	azure-pipelines.yml = azure-pipelines.yml
+	GitVersion.yml = GitVersion.yml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

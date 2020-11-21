@@ -15,6 +15,7 @@ namespace AbcLookup
             return AbcList[i];
         }
         
+        //Is used to get the previous character in the alphabet
         public static char GetPrevious(char input)
         {
             var i = AbcList.IndexOf(input) - 1;
