@@ -8,7 +8,7 @@ pool:
 
 resources:
   repositories:
-    - repository: templates
+    - repository: CICD
       type: github
       name: rweritz/CICD
       endpoint: rweritz
