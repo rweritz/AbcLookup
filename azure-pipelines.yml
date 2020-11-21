@@ -14,7 +14,7 @@ resources:
       endpoint: rweritz
 
 jobs:
-  - template: dotnet-ci-pipeline.yml@templates
+  - template: dotnet-ci-pipeline.yml@CICD
     parameters:
       restoreFeed: excribe
       publishFeed: excribe
