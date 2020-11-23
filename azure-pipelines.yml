@@ -14,7 +14,7 @@ resources:
       endpoint: rweritz
 
 steps:
-  - template: dotnet-ci-template.yml@templates
+  - template: pipeline-templates/dotnet-ci-template.yml@templates
     parameters:
       restoreFeed: excribe
       publishFeed: excribe
