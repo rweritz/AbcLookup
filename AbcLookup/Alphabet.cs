@@ -21,6 +21,11 @@ namespace AbcLookup
             var i = AbcList.IndexOf(input) - 1;
             return AbcList[i];
         }
+
+        public static IList<char> GetVowels()
+        {    
+            return "AEIOU".ToCharArray().ToList();
+        }
         
     }
 }
