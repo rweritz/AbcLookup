@@ -13,6 +13,9 @@ resources:
       name: rweritz/CICD
       endpoint: rweritz
 
+variables:
+  GitVersion.SemVer: ''
+
 steps:
   - template: pipeline-templates/dotnet-ci-template.yml@templates
     parameters:
