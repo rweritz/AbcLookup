@@ -15,10 +15,16 @@ namespace AbcLookup
             return AbcList[i];
         }
         
+        //Is used to get the previous character in the alphabet
         public static char GetPrevious(char input)
         {
             var i = AbcList.IndexOf(input) - 1;
             return AbcList[i];
+        }
+
+        public static IList<char> GetVowels()
+        {    
+            return "AEIOU".ToCharArray().ToList();
         }
         
     }
