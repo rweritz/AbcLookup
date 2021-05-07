@@ -22,6 +22,7 @@ namespace AbcLookup
             return AbcList[i];
         }
 
+        //Is used to get a list of all vowels
         public static IList<char> GetVowels()
         {    
             return "AEIOU".ToCharArray().ToList();
